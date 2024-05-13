@@ -1,71 +1,64 @@
-
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import "./Footer.css"; // Import your CSS file
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
+    <div className="footer">
+      <div className="footer-content">
+        <div className="footer-section">
+          <h3>Designed and Developed by Ruman Maharjan</h3>
+        </div>
+        <div className="footer-section">
           <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
+        </div>
+        <div className="footer-section">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/"
+                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <span>Github</span>
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/"
+                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <span>Twitter</span>
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in"
+                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <span>LinkedIn</span>
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <span>Instagram</span>
               </a>
             </li>
           </ul>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 
