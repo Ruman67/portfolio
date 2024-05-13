@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css"; // Import your CSS file
-
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
@@ -11,7 +14,7 @@ function Footer() {
           <h3>Designed and Developed by Ruman Maharjan</h3>
         </div>
         <div className="footer-section">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright © {year} RM</h3>
         </div>
         <div className="footer-section">
           <ul className="footer-icons">
@@ -22,7 +25,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Github</span>
+                <span><GrLinkedin /></span>
               </a>
             </li>
             <li className="social-icons">
@@ -32,7 +35,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Twitter</span>
+                <span><FaFacebook /></span>
               </a>
             </li>
             <li className="social-icons">
@@ -42,7 +45,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>LinkedIn</span>
+                <span><FaGithubSquare /></span>
               </a>
             </li>
             <li className="social-icons">
@@ -52,7 +55,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Instagram</span>
+                <span><FaSquareInstagram /></span>
               </a>
             </li>
           </ul>
