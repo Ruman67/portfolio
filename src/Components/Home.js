@@ -1,67 +1,13 @@
-// import React from 'react';
-import styled from 'styled-components';
+// Components/Home/Home.js
+import React from 'react';
 
-// Navbar component
-const Navbar = () => {
+function Home() {
     return (
-        <Nav>
-            {/* Navbar content */}
-        </Nav>
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <p>This is the home page of our awesome website. Here you will find an overview of what we offer and the latest updates.</p>
+            <p>Explore our services, learn more about us, and don't hesitate to get in touch.</p>
+        </div>
     );
-};
-
-// HomePage component
-const HomePage = () => {
-    return (
-        <Wrapper>
-            <Navbar />
-            <Container>
-                <SkillsSection>
-                    <h2>I am a Coder & Designer</h2>
-                    {/* Add your animation or skills content here */}
-                </SkillsSection>
-                <PictureSection>
-                    <img src="workflow.png" alt="Your" />
-                </PictureSection>
-            </Container>
-        </Wrapper>
-    );
-};
-
-const Wrapper = styled.div`
-    /* Style the wrapper as needed */
-`;
-
-const Nav = styled.nav`
-    /* Style your navbar as needed */
-`;
-
-const Container = styled.div`
-    display: flex;
-    height: calc(100vh - /* navbar height */); /* Adjust based on your navbar height */
-    width: 100%;
-`;
-
-const SkillsSection = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Adjust the background color as needed */
-    /* Add additional styling as needed */
-`;
-
-const PictureSection = styled.div`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0; /* Adjust the background color as needed */
-    /* Add additional styling as needed */
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-`;
-
-export default HomePage;
+}
+export default Home;

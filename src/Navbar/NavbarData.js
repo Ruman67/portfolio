@@ -15,4 +15,8 @@ export const NavbarData = [
 		title: 'Contact',
 		link: '/contact',
 	},
+	{
+		title: 'Resume',
+		link: '/resume',
+	},
 ];

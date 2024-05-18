@@ -5,6 +5,7 @@ import { GlobalStyle } from './GlobalStyle';
 import reportWebVitals from './reportWebVitals';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
+
 ReactDOM.render(
 	<React.StrictMode>
 		<GlobalStyle />
