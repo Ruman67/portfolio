@@ -1,6 +1,24 @@
 /* Components/Resume/Resume.css */
-button {
-    background-color: #4CAF50; /* Green */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+}
+
+.resume-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.download-section {
+    text-align: center;
+}
+
+/* Apply styles to the button */
+.resume-container button {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -13,7 +31,8 @@ button {
     border-radius: 4px;
 }
 
-button a {
+/* Apply styles to the anchor tag within the button */
+.resume-container button a {
     text-decoration: none;
     color: white;
 }
