@@ -1,13 +1,41 @@
-// Components/Home/Home.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import './Home.css';
 
-function Home() {
-    return (
-        <div>
-            <h1>Welcome to Our Website</h1>
-            <p>This is the home page of our awesome website. Here you will find an overview of what we offer and the latest updates.</p>
-            <p>Explore our services, learn more about us, and don't hesitate to get in touch.</p>
-        </div>
-    );
+const textVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
+const Home = () => {
+  const [textIndex, setTextIndex] = useState(0);
+  const texts = ["I am a Coder", "I am a Designer"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [texts.length]);
+
+  return (
+    <div className="home-container">
+      <motion.div 
+        className="text-container"
+        initial="hidden"
+        animate="visible"
+        variants={textVariants}
+        key={textIndex} // This key ensures Framer Motion re-renders the component
+      >
+        <h1>{texts[textIndex]}</h1>
+      </motion.div>
+      <div className="image-container">
+        <img src="image.jpg" alt="Ruman"/>
+      </div>
+    </div>
+  );
 }
+
 export default Home;
+
