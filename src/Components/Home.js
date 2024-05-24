@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Home.css';
+import images from './images/ruman.jpeg'; // Updated import path
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -31,11 +32,10 @@ const Home = () => {
         <h1>{texts[textIndex]}</h1>
       </motion.div>
       <div className="image-container">
-        <img src="image.jpg" alt="Ruman"/>
+        <img src={images} alt="Rum"/>
       </div>
     </div>
   );
 }
 
 export default Home;
-

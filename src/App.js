@@ -1,25 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './Navbar/Navbar';
 import Contact from './Components/Contact/Contact';
-import Resume from './Components/Resume/ResumeIn';
+import ResumeIn from './Components/Resume/ResumeIn';
 import Home from './Components/Home';
-import Services from './Components/Services/Services';
+import Skill from './Components/Skill/Skills';
 import About from './Components/About/About';
-function App() {
-	return (
-		<>
-			<Router>
-				<Navbar />
-				<Routes>
-					<Route path="/" element={<Home/>} />
-					<Route path="/services" element={<Services/>} />
-				    <Route path="/about" element={<About/>}/>
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/resume" element={<Resume />}/>
-				</Routes>
-			</Router>
-		</>
-	);
+
+function AnimatedRoutes() {
+    const location = useLocation();
+
+    return (
+        <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<Home />} />
+                <Route path="/skill" element={<Skill />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/resume" element={<ResumeIn />} />
+            </Routes>
+        </AnimatePresence>
+    );
 }
 
-export default App;
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <AnimatedRoutes />
+        </Router>
+    );
+}
+export  default App;

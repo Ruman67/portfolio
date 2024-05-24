@@ -1,0 +1,34 @@
+.skill-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skill-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-item {
+    margin-bottom: 20px;
+    font-size: 18px;
+    opacity: 0; /* Initially hide the skills */
+    animation: fadeInUp 1s ease forwards; /* Apply animation */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  p {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+  }
+  
