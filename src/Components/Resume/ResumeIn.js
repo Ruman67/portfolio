@@ -1,13 +1,11 @@
 import React from 'react';
 import './Resume.css'; // Import the CSS file
-import images from './rum1.png';
+import resumeImage from './rum1.png'; // Import the image
 
 function ResumeIn() {
     const downloadImage = () => {
-        // Replace 'images' with the actual URL of your image
-        const imageURL = images;
         const link = document.createElement('a');
-        link.href = imageURL;
+        link.href = resumeImage;
         link.download = 'resume_image.png'; // Specify the name for the downloaded file
         document.body.appendChild(link);
         link.click();
@@ -18,9 +16,9 @@ function ResumeIn() {
         <div className="resume-container">
             <div className="download-section">
                 <h1>Download Resume</h1>
-                <button onClick={downloadImage}>
+                <img src={resumeImage} alt="Resume thumbnail" className="resume-image" />
+                <button onClick={downloadImage} aria-label="Download Resume" style={{ border: '2px solid red', backgroundColor: 'black' }}>
                     Download CV
-                    <img src={images} alt="Rum" />
                 </button>
             </div>
         </div>
