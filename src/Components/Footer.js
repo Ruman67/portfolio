@@ -17,8 +17,11 @@ function Footer() {
           <h3>Copyright © {year} RM</h3>
         </div>
         <div className="footer-section">
-          <ul className="footer-icons">
+        
+          <ul className="footer-icons"> <h4>Follow me </h4>
+         
             <li className="social-icons">
+             
               <a
                 href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
                 style={{ color: "white" }}
@@ -30,7 +33,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
+                href="https://www.facebook.com/ruman.maharjan.50"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,7 +53,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/ruman-maharjan-968a1a1b8/"
+                href="https://www.instagram.com/mhrznru/"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"

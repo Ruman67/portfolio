@@ -6,7 +6,7 @@
     padding: 20px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 175%;
   }
   
   .footer-content {
@@ -27,7 +27,7 @@
   }
   
   .social-icons {
-    margin-right: 10px;
+    margin-right: 8px;
   }
   
   .social-icons a {
