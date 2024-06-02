@@ -1,5 +1,3 @@
-
-
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { BiMenuAltRight, BiMenu } from 'react-icons/bi';
@@ -11,6 +9,11 @@ export const Nav = styled.nav`
 
 	display: flex;
 	align-items: center;
+	
+	position: fixed; /* Ensure the navbar stays at the top */
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 `;
 
 export const Container = styled.div`
