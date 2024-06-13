@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Home.css';
 import images from './images/ruman.jpeg'; // Updated import path
-
+import './About/About.css';
+import './Contact/Contact.css';
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -10,7 +11,7 @@ const textVariants = {
 
 const Home = () => {
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ["I am a Coder", "I am a Designer"];
+  const texts = ["I am a Coder", "I am a Designer","I am a Developer"];
 
   useEffect(() => {
     const interval = setInterval(() => {

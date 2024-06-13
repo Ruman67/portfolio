@@ -31,4 +31,7 @@
     font-style: italic;
     color: #666;
   }
-  
+  .skill-container{
+    text-align: center;
+    padding:50px;
+  }
