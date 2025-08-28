@@ -103,7 +103,7 @@ export default function App() {
             <ul>
               <li>✔IOE Overflow</li>
               <li>✔ Brain Tumor Detection Research </li>
-              <li>Digital Book using Unity</li>
+              <li> ✔Digital Book using Unity</li>
             </ul>
           </motion.div>
         )}
