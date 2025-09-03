@@ -1,0 +1,67 @@
+/* General Page Style */
+body {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Intro */
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Hero Title */
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 20px 0;
+  color: #111; /* Black */
+}
+
+/* Highlight word inside title */
+.title .highlight {
+  color: #6b7280; /* Subtle gray */
+}
+
+/* Buttons */
+.btn-primary,
+.btn-outline {
+  margin: 0 10px;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* Description */
+.desc {
+  font-size: 1rem;
+  color: #6b7280; /* Subtle gray */
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 700px;
+}

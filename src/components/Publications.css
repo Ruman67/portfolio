@@ -1,0 +1,68 @@
+.publications {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto; /* center section */
+  text-align: center; /* center text */
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  display: inline-block; /* keeps underline centered */
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pub-list li {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.pub-list strong {
+  font-size: 20px;
+  color: #111;
+}
+
+.pub-list span {
+  display: block;
+  color: #555;
+  margin-top: 5px;
+}
+
+.pub-list a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.pub-list a:hover {
+  background: black;
+  color: white;
+}
+body.dark .theme-toggle {
+  color: #00ffff;
+}
+body.dark .btn-primary {
+  background-color: #00ffff; /* Sky blue */
+  color: #0a0a0a; /* Black text */
+}
+
+body.dark .btn-outline {
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+}

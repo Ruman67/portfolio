@@ -1,0 +1,69 @@
+.experience {
+  padding: 80px 50px;
+  max-width: 900px; /* limit width */
+  margin: 0 auto; /* center horizontally */
+  text-align: center; /* center text */
+}
+
+.experience h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 2px solid #ddd;
+  padding-left: 30px;
+  margin: 0 auto; /* keeps timeline centered */
+  text-align: left; /* keep details aligned left for readability */
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -41px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: white;
+}
+
+.date {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.role {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.desc {
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center; /* tags centered */
+}
+
+.tag {
+  background: #f3f3f3;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+body.dark .theme-toggle {
+  color: #00ffff;
+}

@@ -1,0 +1,23 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Optional: Makes the section full height */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-placeholder {
+  text-align: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background: #fafafa;
+  opacity: 0.9;
+  max-width: 600px; /* Optional: Limits the width for better centering */
+}
