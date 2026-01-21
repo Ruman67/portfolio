@@ -4,6 +4,9 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
       <p className="intro">Hi there! I'm Ruman 👋</p>
+      <p className="intro">
+        <b>Web Developer & QA Enthusiast</b>
+      </p>
       <h2 className="title">
         Building modern <br />
         web solutions with a <br />

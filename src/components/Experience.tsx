@@ -2,7 +2,13 @@ import "./Experience.css";
 
 const experiences = [
   {
-    date: "June 2025 – Present",
+    date: "September 2025 – Present",
+    role: "QA Intern · Amnil Technologies Pvt. Ltd",
+    desc: " ",
+    tags: [""],
+  },
+  {
+    date: "June 2025 – August 2025",
     role: "Unity Developer · Pixel Square",
     desc: "Developed a highlighter for Digital Book for both Nepali and English subjects ",
     tags: ["Unity", "C#"],
